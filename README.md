@@ -39,3 +39,7 @@ class TestPens - класс тестов животных.
 class TestToken - класс тестирования токенов.
     test_post_token - отправка токена на сайт. 
        
+
+команда для запуска теста:
+
+  pytest --html=report.html --self-contained-html test_hardcode.py
