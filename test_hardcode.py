@@ -66,6 +66,9 @@ class TestPens():
         assert r.status_code == 200, f"код ошибки = {r.status_code}"
 
     def test_create_category(self):
+        """
+        Создание временной категории для создания в ней животного.
+        """
         p = requests.post(BASE_LINK + '/category/', {'name': 'horned'}, auth=('admin', 'admin'))
         global ID
         ID = p.json()['id']
